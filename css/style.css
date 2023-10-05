@@ -1,0 +1,114 @@
+/* start global rules */
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+
+}
+/* start variables */
+:root{
+    --p-color: hsl(241, 100%, 89%);
+}
+/* start variables */
+/* end global rules */
+/* start container */
+.container {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    width: 1440px;
+}
+/* end container */
+/* start result */
+.container .result {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 30px;
+    text-align: center;
+    padding-top: 9px;
+
+}
+
+.result h3:nth-child(1) {
+    color: var(--p-color);
+    font-size: 20px;
+
+}
+.result p:nth-child(3){
+    color: white;
+        font-size: 27px;
+        margin-bottom: -4px;
+        font-weight: bold;
+}
+.result p:nth-child(4) {
+    font-size: 18px;
+        color: hsla(241, 100%, 89%, 0.852);
+        padding: 0 30px 25px;
+        line-height: 1.2;
+}
+.container .result .circle {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container .result .circle h1 , .container .result .circle p{
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container .result .circle h1{
+font-size: 55px;
+    color: white;
+    top: 35px;
+}
+.container .result .circle p{
+    color: hsla(241, 100%, 89%, 0.578);
+        font-size: 15px;
+        margin-top: 35px;
+}
+@media (max-width: 767px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* end result */
+/* start summary */
+.container .summary{
+    -webkit-border-radius: 24px;
+        -moz-border-radius: 24px;
+        -ms-border-radius: 24px;
+        -o-border-radius: 30px;
+        text-align: center;
+background-color: burlywood;
+/* display: flex; */
+
+}
+.container .summary .red{
+    display: flex;
+
+}
+/* end summary */
